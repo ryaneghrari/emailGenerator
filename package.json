@@ -11,10 +11,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run raidoninc-ui:serve-ssr",
-    "serve:ssr": "node dist/raidoninc-ui/server/main.js",
+    "dev:ssr": "ng run emailGenerator:serve-ssr",
+    "serve:ssr": "node dist/emailGenerator/server/main.js",
     "build:ssr": "ng build --prod && ng run emailgenerator:server:production",
-    "prerender": "ng run raidoninc-ui:prerender",
+    "prerender": "ng run emailGenerator:prerender",
     "serve-mobile": "ng serve --host=0.0.0.0 --disable-host-check & ngtw watch"
   },
   "private": true,
