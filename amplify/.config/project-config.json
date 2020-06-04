@@ -6,8 +6,8 @@
         "framework": "angular",
         "config": {
             "SourceDir": "src",
-            "DistributionDir": "dist/browser",
-            "BuildCommand": "npm run-script build",
+            "DistributionDir": "dist/emailGenerator/browser/",
+            "BuildCommand": "npm run-script build-prod",
             "StartCommand": "ng serve"
         }
     },
