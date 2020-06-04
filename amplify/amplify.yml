@@ -1,0 +1,10 @@
+version: 1.0
+
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm i
+    build:
+      commands:
+        - npm run build-prod

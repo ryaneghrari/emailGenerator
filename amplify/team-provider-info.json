@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-emailgenerator-dev-230655-authRole",
+            "UnauthRoleArn": "arn:aws:iam::901882909685:role/amplify-emailgenerator-dev-230655-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::901882909685:role/amplify-emailgenerator-dev-230655-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-emailgenerator-dev-230655-deployment",
+            "UnauthRoleName": "amplify-emailgenerator-dev-230655-unauthRole",
+            "StackName": "amplify-emailgenerator-dev-230655",
+            "StackId": "arn:aws:cloudformation:us-east-1:901882909685:stack/amplify-emailgenerator-dev-230655/734ec0d0-a610-11ea-8f84-12301089d57f",
+            "AmplifyAppId": "d2g0rrf8cizvke"
+        }
+    }
+}
