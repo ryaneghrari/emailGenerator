@@ -49,7 +49,6 @@ export class PolicyService {
 
     return this.getPolicyByLocation(location).pipe(
       map(policy => {
-        console.log({policy})
         let officials = [];
 
         for (let i = 0; i < types.length; i++) {

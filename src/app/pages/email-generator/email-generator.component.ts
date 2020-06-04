@@ -33,7 +33,6 @@ export class EmailGeneratorComponent implements OnInit {
 
   ngOnInit() {
     this.policyService.getLocations().subscribe(locations => {
-      console.log({locations})
       this.locations = locations;
       this.location = this.locations[0];
       this.updateLocation();
@@ -46,7 +45,6 @@ export class EmailGeneratorComponent implements OnInit {
   }
 
   onLocationChage($event){
-    console.log($event)
     this.updateLocation();
   }
 
