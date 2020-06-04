@@ -50,7 +50,7 @@ ${policy.requires_comprehensive_reporting > 0 ? '✅' : '🚫'} Requires Compreh
 ${policy.requires_exhaust_other_means_before_shooting > 0 ? '✅' : '🚫'} Requires Exhausting Other Means Before Shooting 
 ${policy.has_use_of_force_continuum > 0 ? '✅' : '🚫'} Has Use of Force Continuum 
 
-I ${sender.name} ask you to please consider these policy changes immediately. Thank you for your service. 
+I ${sender.name} ask you to please consider these remaining policy changes immediately. Thank you for your service. 
 
 Sincerely,
 ${sender.name}
