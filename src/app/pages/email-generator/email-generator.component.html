@@ -1,0 +1,76 @@
+<div class="flex flex-col items-center">
+  <div class="max-w-4xl flex flex-col px-4 pb-12">
+    <div class="font-bold text-3xl text-center pt-16">8 Can't Wait Email Generator</div>
+    <div class="text-lg text-center py-2 text-gray-600">Quickly generate an email and support the 8 Can't Wait Policies
+    </div>
+
+    <div class="flex flex-col items-center w-full">
+      <div class="w-full flex flex-col sm:flex-row justify-between">
+        <mat-form-field class="w-full max-w-sm mt-4">
+          <mat-label>City</mat-label>
+          <mat-select [(ngModel)]="location" (selectionChange)="onLocationChage($event)">
+            <mat-option *ngFor="let location of locations" [value]="location">
+              {{location.city}} ({{location.state}})
+            </mat-option>
+          </mat-select>
+          <!-- <select matNativeControl [(ngModel)]="location" name="location">
+            <option *ngFor="let location of locations" [value]="location.id">
+              {{location.city}} ({{location.state}})
+            </option>
+          </select> -->
+        </mat-form-field>
+
+        <mat-form-field class="w-full max-w-sm mt-4">
+          <mat-label>Officials</mat-label>
+          <mat-select [(ngModel)]="official" (selectionChange)="onOfficialChage($event)">
+            <mat-option *ngFor="let official of officials" [value]="official">
+              {{official.name ? official.name : 'N/A'}} ({{official.type}})
+            </mat-option>
+          </mat-select>
+          <!-- <select matNativeControl [(ngModel)]="official" name="official">
+            <option *ngFor="let official of officials" [value]="official">
+              {{official.name ? official.name : 'N/A'}} ({{official.type}})
+            </option>
+          </select> -->
+        </mat-form-field>
+      </div>
+      
+
+      <div class="flex w-full">
+        <mat-form-field class="w-full max-w-sm mt-4">
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Juma Eghrari" type="text" [(ngModel)]="sender.name" (input)="onNameChange($event.target.value)" required>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <!-- preview -->
+    <ng-container>
+      <div class="flex justify-end my-4">
+        <div
+        (click)="copyToClipboard(email)"
+          class="px-4 py-3 bg-gray-100 hover:bg-gray-300 active:bg-gray-400 text-center cursor-pointer transition-all duration-150 ease-in-out rounded">
+          Copy to clipboard
+        </div>
+      </div>
+      
+      
+      <div class="p-4 pb-0 pl-0 text-gray-500 text-sm">preview</div>
+      <div
+        *ngIf="official && location && sender"
+        class="whitespace-pre-line p-2 bg-gray-100 rounded"
+        (click)="copyToClipboard(email)">
+        {{email}}
+      </div>
+    </ng-container>
+
+    <div class="flex justify-center w-full mt-4">
+      <a href="mailto:{{official.email}}?subject=8 Can't Wait&body={{formattedEmail}}">
+        <div class="px-4 py-3 bg-gray-100 hover:bg-gray-300 active:bg-gray-400 text-center cursor-pointer transition-all duration-150 ease-in-out rounded">
+          Send Email
+        </div>
+      </a>
+    </div>
+    
+  </div>
+</div>

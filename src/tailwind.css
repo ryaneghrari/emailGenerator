@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+
+button:focus {outline:0 !important;}
+
+.grey {
+  color: grey;
+}
+.blur{
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.upright{
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+}
+
+.twc_social_icon{
+  @apply w-8 h-8 m-4 text-gray-600 transition-colors duration-150 fill-current;
+}
+.twc_social_icon:hover{
+  @apply text-blue-500;
+}
+.twc_social_icon:active{
+  @apply text-blue-500;
+}
+
+@tailwind utilities;
+
+
