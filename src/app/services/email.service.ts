@@ -41,14 +41,14 @@ I write to you as of ${date}.  NY has enacted ${this.getNumEnacted(policy)}/8 of
 
 ${location.city} (${location.state}):
 
-[${policy.requires_deescalation > 0 ? 'x': ' '}] Requires De-escalation 
-[${policy.bans_chokeholds_and_strangleholds > 0 ? 'x' : ' '}] Bans Chokeholds and Strangleholds
-[${policy.duty_to_intervene > 0 ? 'x' : ' '}] Duty to Intervene 
-[${policy.requires_warning_before_shooting > 0 ? 'x' : ' '}] Requires Warning Before Shooting 
-[${policy.restricts_shooting_at_moving_vehicles > 0 ? 'x' : ' '}] Ban Shooting at Moving Vehicles 
-[${policy.requires_comprehensive_reporting > 0 ? 'x' : ' '}] Requires Comprehensive Reporting 
-[${policy.requires_exhaust_other_means_before_shooting > 0 ? 'x' : ' '}] Requires Exhausting Other Means Before Shooting 
-[${policy.has_use_of_force_continuum > 0 ? 'x' : ' '}] Has Use of Force Continuum 
+${policy.requires_deescalation > 0 ? '✅' : '🚫'} Requires De-escalation 
+${policy.bans_chokeholds_and_strangleholds > 0 ? '✅' : '🚫'} Bans Chokeholds and Strangleholds
+${policy.duty_to_intervene > 0 ? '✅' : '🚫'} Duty to Intervene 
+${policy.requires_warning_before_shooting > 0 ? '✅' : '🚫'} Requires Warning Before Shooting 
+${policy.restricts_shooting_at_moving_vehicles > 0 ? '✅' : '🚫'} Ban Shooting at Moving Vehicles 
+${policy.requires_comprehensive_reporting > 0 ? '✅' : '🚫'} Requires Comprehensive Reporting 
+${policy.requires_exhaust_other_means_before_shooting > 0 ? '✅' : '🚫'} Requires Exhausting Other Means Before Shooting 
+${policy.has_use_of_force_continuum > 0 ? '✅' : '🚫'} Has Use of Force Continuum 
 
 I ${sender.name} ask you to please consider these policy changes immediately. Thank you for your service. 
 
