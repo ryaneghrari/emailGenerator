@@ -37,7 +37,7 @@ export class EmailService {
 
     return of(`Dear ${official.name},
 
-I write to you as of ${date}.  ${location.state} has enacted ${this.getNumEnacted(policy)}/8 of the 8cantwait.org policies that have proven to reduce police violence by 72%. 
+I write to you as of ${date}.  ${location.city}, ${location.state} has enacted ${this.getNumEnacted(policy)}/8 of the 8cantwait.org policies that have proven to reduce police violence by 72%. 
 
 ${location.city} (${location.state}):
 
